@@ -1,301 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Conference Template - Documentation</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>Conference</title>
 
-	<!-- CSS -->
-	<!-- Bootstrap core CSS -->
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100,300,400">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
-
-	<link href="assets/css/prettify.css" rel="stylesheet">
-
-	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="bower_components/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" href="bower_components/nivo-lightbox/nivo-lightbox-theme.css">
+    <link rel="stylesheet" href="bower_components/countdown/jquery.countdown.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
-<body>
 
-	<div class="container main">
-		<div class="row">
+<body data-spy="scroll">
+<div id="home"></div>
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
 
-			<div class="col-md-3">
+            <!-- logo -->
+            <div class="site-branding">
+                <a class="logo" href="index.html">
+                    <!-- logo image  -->
+                    <img src="assets/images/insight_rgb_72dpi_reversed.png" alt="Logo">
+                    Student Conference 2020
+                </a>
+            </div>
 
-				<div class="sidebar hidden-print my_affix" role="complementary" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-					<ul class="nav sidenav">
-                        <li class="active"><a href="#introduction">Introduction</a></li>
-                        <li><a href="#feature">Template Features</a></li>
-                        <li><a href="#start">Getting Started</a></li>
-                        <li><a href="#section">Section Structure</a></li>
-                        <li><a href="#countdown">Countdown</a></li>
-                        <li><a href="#contact">Contact Section</a></li>
-                        <li><a href="#contact-form">Working Contact form</a></li>
-                        <li><a href="#attribution">Attribution</a></li>
-                        <li><a href="#changelog">Changelog</a></li>
-                    </ul>
-				</div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-			</div>
+        </div><!-- /.navbar-header -->
 
-			<div class="col-md-9">
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
 
-				<section class="header" id="introduction">
-					<h1><a href="../index.html" target="_blink">Conference</a> - Documentation</h1>
-				</section>
-				<br/><br/>
-				<section class="section">
-					<div class="well-lg alert alert-success">
-						<h4>Good Day!</h4>
-						<p>Thank you for choosing our template - Conference . If you have any questions please feel free to submit a ticket in our website <a target="_blank" href="https://themewagon.com/wagon_tickets/">here</a>.</p>
-					</div>
+                <!-- navigation menu -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#speakers">Keynote speaker</a></li>
+                <li><a href="#organisers">Organising committee</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#photos">Photos</a></li>
 
-					<!-- Customization -->
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
 
+<header id="site-header" class="site-header valign-center">
+    <div class="intro">
 
+        <h2>21 January, 2020 / Galway</h2>
 
-					<!-- template featurs -->
+        <h1>The Sixth Insight Student Conference (ISC) 2019</h1>
 
-					<h2 id="feature">Template Features</h2>
+        <p>for students by students</p>
 
-					<ul>
-						<li><strong>One Page Template</strong></li>
-						<li><strong>Easy to customize:</strong> background, content</li>
-						<li>Fully responsive</li>
-						<li>Ionicons Icons <strong>400+ icons</strong></li>
-                        <li>Nivo lightbox <strong>Photo viewer</strong></li>
-						<li>Powered by Twitter Bootstrap</li>
-                        <li>Google Font</li>
-                        <li>Countdown</li>
-						<li>Smooth animation</li>
-						<li>Working <strong>Contact form</strong> with validation</li>
-                        <li>Working <strong>Submission form</strong> with validation</li>
-                        <li>Working <strong>Registration form</strong> with validation</li>
-						<li><strong>Well Documented</strong></li>
-						<li>Clear &amp; Neat Design</li>
-						<li><strong>Accurate HTML code</strong> with comments</li>
-					</ul>
+        <a class="btn btn-white inpage" href="#speakers">View Speakers</a>
 
-					<!-- end of template featurs -->
+    </div>
+</header>
 
+<div id="countdown" class="countdown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h3 class="section-title">Event Start</h3>
+            </div>
+            <div class="col-md-10">
+                <div id="defaultCountdown"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<section id="about" class="section about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
 
+                <h3 class="section-title">About ISC</h3>
 
+                <p>
+                  The sixth Insight Student Conference will take place on 21 January 2019 at <a href="https://www.nuigalway.ie/" target="_blank">NUI Galway</a>.
+                  The objectives of this conference are:
 
+                  <ul class="list-arrow-right">
+                    <li>Presents a snapshot of current research activity conducted in Insight for other Insight members.</li>
+                    <li>Provides a summary of Insight research to people outside of Insight (e.g. media, government, and others).</li>
+                    <li>Provides an opportunity for students to organize a medium sized research meeting.</li>
+                  </ul>
+                  This is a conference organized by students for students. All Ph.D. students should submit an abstract and review one of another student.
+                </p>
 
-					<!-- getting started -->
+                <figure>
+                    <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                </figure>
 
-					<h2 id="start">Getting Started</h2>
-						
-					<p>Unzip the downloaded folder and find out the <strong>assets</strong>. There are all the template files in this folder. You can open the following files for viewing in browser.</p>
-					
-                    <ol>
-                        <li>
-                            <strong>css</strong>&nbsp;&mdash; folder with css files.
-                        </li>
-                        <li>
-                            <strong>images</strong>&nbsp;&mdash; folder with image files and png Icon.
-                        </li>
-                        <li>
-                            <strong>js</strong>&nbsp;&mdash; folder with Javascript files.
-                        </li>
-                        
-                        <li>
-                            <strong>index.html</strong>&nbsp;&mdash; the Home page.
-                        </li>
-                        
-                    </ol>
-                    <p>There is another folder called <strong>bower_components</strong>.  You will get all the Libraries used in the template in this folder.</p>
+            </div><!-- /.col-sm-6 -->
 
+            <div class="col-sm-6">
 
-					<!-- end of getting started -->
+                <h3 class="section-title multiple-title">Call for abstracts</h3>
 
-					<!-- navbar -->
-					<h2 id="section">General Structure of a Section</h2>
-					<p>In <strong>index.html</strong> file . HTML structure of a General Section</p>
+                <p align="justify">
+                  All students associated with Insight Centre for Data Analytics are invited to send a 1-page extended abstract summarising their current research. All abstracts will be reviewed by at least one Insight member. The authors of accepted abstracts are invited to submit a poster to be presented in the Insight Student Conference.
+                </p>
 
-					<pre class="prettyprint lang-basic">
-&lt;!-- ****************************** Section ************************** --&gt;
-&lt;section id="section_id" class="section section_class"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            ........
-        &lt;/div&gt;&lt;!-- /.row --&gt;
-    &lt;/div&gt;&lt;!-- /.container --&gt;
-&lt;/section&gt;</pre>
+                <p align="justify">
+                All accepted abstracts would be submitted to a voting system where Insight members may vote for the best abstract. The most voted ones will be invited to give a short presentation at the conference.
+                </p>
 
-
-                    <!-- end of getting started -->
-
-                    <!-- Countdown -->
-                    <h2 id="countdown">Countdown Section</h2>
-                    <p>In <strong>index.html</strong> file . HTML structure of Countdown Section is following. To change the countdown time open <strong>assets/js/main.js</strong> file. Go to line <strong>175</strong> and put your desired target date just changing the value of day, month and year.</p>
-                    <pre class="prettyprint lang-basic">
-// Countdown jquery
-
-$(function () {
-    var day = 31,
-        month = 12,
-        year = 2016;
-    var austDay = new Date(year, month - 1, day);
-    $('#defaultCountdown').countdown({until: austDay});
-    $('#year').text(austDay.getFullYear());
-});</pre>
+                <h3 class="section-title multiple-title">What is new this year?</h3>
+                <p align="justify">
+                  In comparison to the previous student confernces (<a href="https://www.insight-centre.org/content/insight-student-conference-2014" target="_blank">2014</a>, <a href="https://www.insight-centre.org/content/insight-student-conference-2015" target="_blank">2015</a>, <a href="https://www.insight-centre.org/content/student-conference-2016" target="_blank">2016</a>, <a href="http://studentconference2017.insight-centre.org/" target="_blank">2017</a> and 2018 in Dublin), we have a couple of new ideas for the ISC2020 which are briefly described as:
+                  <ul class="list-arrow-right">
+                    <li>Paper-free poster session</li>
+                    <li>Best Insight student award</li>
+                  </ul>
+                </p>
+                There will be the best presenation and poster awards as usual. The abstracts will also be publishing in the book of abstracts (see an example <a href="http://studentconference2017.insight-centre.org/book.pdf" target="_blank">here</a>).
 
 
-					<!-- contact section -->
 
-					 <!-- ============ Contact Section ============= -->  
+            </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
 
-                    <h2 id="contact">Contact Section</h2>
-                    <p>In <strong>Contact section</strong>, HTML structure of the Contact Section is following. Google Map is also included here. If you want to change the location, you have to change the iframe source [src]. Go to <a href="https://www.google.com/maps" target="_blink">google map</a> and find your location. Then click share and go to the "Embed map" tab in that popup window. Copy the iframe src and replace the below src with it.</p>
-                    <pre class="prettyprint lang-basic">
-&lt;section id="location" class="section location"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col-sm-3"&gt;
-                &lt;h3 class="section-title"&gt;Event Location&lt;/h3&gt;
-                &lt;address&gt;
-                    &lt;p&gt;Eardenia&lt;br&gt; The Grand Hall&lt;br&gt; House # 08, Road #52, Street&lt;br&gt;park# 02, California &lt;br&gt; Phone:
-                        +1159t3764&lt;br&gt; Email: example@mail.com&lt;/p&gt;
-                &lt;/address&gt;
-            &lt;/div&gt;
-            &lt;div class="col-sm-9" id="map"&gt;
-                &lt;iframe class="map_canvas"
+<section id="facts" class="bg-image-1 facts text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>2020<br>January 21</h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>Galway<br></h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>~150<br>Tickets</h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>06<br>Speakers</h3>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+
+<section id="guidelines" class="section about">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h3 class="section-title">GUIDELINES</h3>
+          </div>
+      </div>
+
+      <p align="justify">
+        The extended abstract must not exceed <b>1 pages</b> and should follow the template of the conference. Templates can be found at:
+          <ul>
+              <li>Abstract:<a href="./assets/docs/AbstractTemplateLaTex.zip">Latex </a>and <a href="./assets/docs/AbstractTemplateWord.doc">Word</a></li>
+              <li>Poster:<a href="./assets/docs/PosterTemplateLaTex.zip">Latex </a>and <a href="./assets/docs/PosterTemplatePowerPoint.pptx">PowerPoint</a></li>
+          </ul>
+      </p>
+
+			<p align="justify">
+              Abstracts and posters should be submitted <a href="https://easychair.org/conferences/?conf=isc20191">here</a>.</br>
+
+              Please submit both the abstract and posters in PDF format. To submit your poster, create a new submission and prepend “POSTER ” to your submission title, e.g. If your abstract is titled “Data Science FTW”, your poster should be titled “POSTER Data Science FTW”. Please select only one topic when submitting your abstracts and posters.</br>
+
+              Please endeavour to follow the branding guidelines on the Insight internal pages.</br>
+              The posters resulting from Research funded by SFI must include the acknowledgement, at least in part, of SFI: "This publication has emanated from research conducted with the financial support of Science Foundation Ireland (SFI) under Grant Number SFI/12/RC/2289, OR, where the publication has emanated from multiple sources of funding: "This publication has emanated from research supported in part by a research grant from Science Foundation Ireland (SFI) under Grant Number SFI/12/RC/2289".
+
+			</p>
+
+
+      For any additional information, please contact:
+    </div><!-- /.container -->
+</section>
+
+
+
+<section id="speakers" class="section speakers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3 class="section-title">Keynote speaker</h3>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.png">
+                    </figure>
+
+                    <h4>TBA</h4>
+
+                    <!-- <p>CEO of Peren</p> -->
+
+                    <!-- <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul> -->
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+
+        </div>
+    </div>
+</section>
+
+<section id="contribution" class="section bg-image-2 contribution">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+
+                <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you
+                    back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you
+                    submit your best work.</p>
+
+                <a class="btn btn-white" data-toggle="modal" data-target="#submission">Submit</a>
+                <div id="submission" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h3 class="black">SUBMIT YOUR CONTRIBUTION WORK</h3>
+                            </div>
+                            <div class="modal-body">
+                                <section>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <p class="pdf">
+                                                        Submitted papers will be reviewed by committee reviewers and be
+                                                        scheduled for either oral or poster presentation during the
+                                                        conferences if the topic is relevant and the quality of the data
+                                                        justifies scheduling. Irrelevant or poor-quality abstracts may
+                                                        be rejected. Reviewed and accepted papers will receive
+                                                        notification information via email on Notification day, and will
+                                                        be requested to register before the Registration Deadline.
+                                                    </p>
+                                                    <p class="pdf">
+                                                        <span class="ion-ios-paper"></span>
+                                                    </p>
+                                                    <p class="down">
+                                                        Download Our all Price and Submit Methods
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h3 class="section-title">Submission Form</h3>
+                                                </div>
+                                            </div>
+
+                                            <form action="php/submission.php" id="submission_form" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                                                        <div class="alert"></div>
+                                                    </div>
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="First Name"
+                                                                           name="fname" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="Last Name"
+                                                                           name="lname" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="email" class="form-control"
+                                                                           placeholder="Email" name="email"
+                                                                           required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="Subject" id="subject"
+                                                                           name="subject" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="6"
+                                                                              placeholder="Message"
+                                                                              name="message"></textarea>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-12 -->
+                                                            <div class="col-sm-6">
+
+                                                            </div>
+                                                            <div class="text-center col-sm-6">
+                                                                <button type="submit" class="btn btn-black"
+                                                                        id="sfsubmit">Submit
+                                                                </button>
+                                                            </div>
+                                                        </div> <!-- /.row -->
+                                                    </div> <!-- /.col-md-10.col-md-offset-1 -->
+                                                </div>
+                                            </form>
+
+                                            <div id="submissionFormResponse"></div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!--  <div class="modal-footer">
+                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="organisers" class="section about">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h3 class="section-title">Organising comittee</h3>
+          </div>
+      </div>
+
+      <p align="justify">Although the student confernece is a local event and limited to the Insighters, it is a still a conference which requires a lot of time and effort to be organized. We followed the advice of the previous organizers who shared their experiences on who time-consuming the task may be and therefore, involved many people in three different team:  </p>
+
+      <hr>
+      <!-- Sina Ahmadi
+      Bianca Pereira
+      Safina showkat Ara -->
+      <b>Organising team</b>: these are the conference organisers who deal with planning and coordination duties. Managing the website for the conference, handling mails and communicating with other groups but also in place are the expected tasks.
+      <div class="speakers">
+          <a href="https://sinaahmadi.github.io/" target="_blank">
+            <img src="assets/images/thum_s/picture-2112-1525095858.jpg" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Sina Ahmadi">
+          </a>
+          <a href="https://www.insight-centre.org/users/bianca-pereira" target="_blank">
+            <img src="assets/images/thum_s/picture-765-1433932051.jpg" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Bianca Pereira">
+          </a>
+            <a href="https://www.insight-centre.org/users/safina-ara" target="_blank">
+            <img src="assets/images/thum_s/picture-1395-1433254427.jpg" alt="speaker" class="thum-s"
+               data-toggle="tooltip" data-placement="top" title="Safina Showkat Ara">
+          </a>
+      </div>
+      <hr>
+      <!-- <h2 class="text-center">Scientific team</h2> -->
+      <!-- Thiago Oliveira
+      Rajdeep Sarkar
+      Koustava Goswami
+      Piyush Yadav -->
+      <p align="justify">
+        <b>Scientific team</b> which takes care of the reviewing process, assigning papers to reviewers with relevant background and managing the Easychair account.
+          <div class="speakers">
+            <a href="https://www.insight-centre.org/users/thiago-de-paula-oliveira" target="_blank">
+              <img src="assets/images/thum_s/picture-2245-1556140330.jpg" alt="speaker" class="thum-s"
+                   data-toggle="tooltip" data-placement="top" title="Thiago Oliveira">
+            </a>
+            <a href="https://nuig.insight-centre.org/uld/rajdeep-sarkar/" target="_blank">
+              <img src="assets/images/thum_s/rajdeep_profile_pic.jpg" alt="speaker" class="thum-s"
+                   data-toggle="tooltip" data-placement="top" title="Rajdeep Sarkar">
+            </a>
+            <a href="https://www.insight-centre.org/users/koustava-goswami" target="_blank">
+              <img src="assets/images/thum_s/Koustava-2-225x300.jpg" alt="speaker" class="thum-s"
+                   data-toggle="tooltip" data-placement="top" title="Koustava Goswami">
+            </a>
+            <a href="https://www.insight-centre.org/users/piyush-yadav" target="_blank">
+              <img src="assets/images/thum_s/picture-1854-1476190972.jpg" alt="speaker" class="thum-s"
+                   data-toggle="tooltip" data-placement="top" title="Piyush Yadav">
+            </a>
+          </div>
+
+        <hr>
+
+        <!-- Heike Vornhagen
+        Mona Isazad
+        Alex Acquier
+        Jefkine Kafunah -->
+
+        <b>Local team</b>: this is related to the local organisation of the conference. Arranging conference venue, printing participants’ cards and providing poster stands are some of the responsibilities.
+        <div class="speakers">
+            <a href="https://www.insight-centre.org/users/heike-vornhagen" target="_blank">
+            <img src="assets/images/thum_s/picture-1541-1446109394.jpg" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Heike Vornhagen">
+            </a>
+            <a href="https://www.insight-centre.org/users/mona-isazad" target="_blank">
+            <img src="assets/images/thum_s/picture-1879-1487895915.jpg" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Mona Isazad">
+            </a>
+            <a href="https://www.insight-centre.org/users/alex-acquier" target="_blank">
+            <img src="assets/images/thum_s/default_user.png" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Alex Acquier">
+            </a>
+            <a href="https://www.insight-centre.org/users/jefkine-kafunah" target="_blank">
+            <img src="assets/images/thum_s/default_user.png" alt="speaker" class="thum-s"
+                 data-toggle="tooltip" data-placement="top" title="Jefkine Kafunah">
+            </a>
+        </div>
+
+        <hr>
+        <strong>PC Members</strong><br/>
+        Each author is also a PC Member of this conference
+
+      </p>
+    </div><!-- /.container -->
+</section>
+
+
+<section id="schedule" class="section schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Events Schedule</h3>
+            </div>
+        </div>
+        <div class="outer-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs schedule_tabs" role="tablist">
+                <li role="presentation">
+                    <a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">
+                        Conference day<br><span>19 November 2016</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active" id="day1">
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <!-- <div class="speakers">
+                                <img src="assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                            </div> -->
+                            <!-- <div class="time"><span class="ion-clock"></span> 01:00 pm</div>-->
+                            <h4 class="panel-title">
+                                <a class="schedule_expand collapsed" href="#">
+                                    <div class="full-width">
+                                        To be announced.
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <!-- <div class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="important-date" class="section important-date">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Important Dates</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table style="width:100%">
+                    <tr>
+                        <th rowspan="2">Expression of interest</th>
+                        <td>Submission Deadline</td>
+                        <td>Notification Date</td>
+                    </tr>
+                    <tr>
+                        <td>November 15, 2019</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Abstract submission</th>
+                        <td>Submission Deadline</td>
+                        <td>Notification Date</td>
+                    </tr>
+                    <tr>
+                        <td>December 10, 2019</td>
+                        <td>On January 7, 2020</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Reviewing process</th>
+                        <td>Paper allocation</td>
+                        <td>Reviewing deadline</td>
+                    </tr>
+                    <tr>
+                        <td>On December 11, 2020</td>
+                        <td>On January 6, 2020</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Poster</th>
+                        <td>Poster submission</td>
+                        <td>Posters printed</td>
+                    </tr>
+                    <tr>
+                        <td>On January 13, 2020</td>
+                        <td>On January 20, 2020</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="photos" class="section photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Our photos here </h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-md-12">
+                <ul class="grid">
+
+                    <li class="grid-item grid-item-sm-6">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-1.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-2.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-3.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-5.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-6.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-7.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-8.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-9.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="assets/images/photos/photos-3.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section id="location" class="section location">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">Event Location</h3>
+                <address>
+                    <p>National University of Ireland Galway<br> University Rd, Galway<br>Galway</p>
+                </address>
+            </div>
+            <div class="col-sm-9" id="map">
+              <iframe  class="map_canvas"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19082.89512582005!2d-9.096371847143555!3d53.283052109887144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96f169862607%3A0x8b41e03d8f400270!2sNational%20University%20of%20Ireland%20Galway!5e0!3m2!1sen!2sie!4v1571764369402!5m2!1sen!2sie" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <!-- <iframe class="map_canvas"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5140.101979841458!2d-75.87722500000112!3d42.16440102632698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37eea170a5903ead!2sResident+Evil+Costuming!5e1!3m2!1sen!2sus!4v1453116369843"
-                    width="100%" height="280" frameborder="0" style="border:0" allowfullscreen&gt;
-                &lt;/iframe&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class="row mt60"&gt;
-            &lt;div class="col-md-12"&gt;
-                &lt;h3 class="section-title "&gt;Contact Us&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;form action="php/contact.php" id="contactForm" method="post"&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="col-md-12"&gt;
-                    &lt;div class="row"&gt;
-                        &lt;div class="col-sm-6"&gt;
-                            &lt;div class="form-group"&gt;
-                                &lt;input type="text" class="form-control" placeholder="Name" id="name" name="name"
-                                       required&gt;
-                            &lt;/div&gt; &lt;!-- /.form-group --&gt;
-                        &lt;/div&gt; &lt;!-- /.col-sm-6 --&gt;
-                        &lt;div class="col-sm-6"&gt;
-                            &lt;div class="form-group"&gt;
-                                &lt;input type="email" class="form-control" placeholder="Email" id="email" name="email"
-                                       required&gt;
-                            &lt;/div&gt; &lt;!-- /.form-group --&gt;
-                        &lt;/div&gt; &lt;!-- /.col-sm-6 --&gt;
-                        &lt;div class="col-sm-12"&gt;
-                            &lt;div class="form-group"&gt;
-                                &lt;textarea class="form-control" rows="6" placeholder="Message" name="message"&gt;&lt;/textarea&gt;
-                            &lt;/div&gt; &lt;!-- /.form-group --&gt;
-                        &lt;/div&gt; &lt;!-- /.col-sm-12 --&gt;
-                        &lt;div class="text-center mt20 col-sm-6 col-sm-offset-3"&gt;
-                            &lt;button type="submit" class="btn btn-black" id="cfsubmit"&gt;Submit&lt;/button&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt; &lt;!-- /.row --&gt;
-                &lt;/div&gt; &lt;!-- /.col-md-10.col-md-offset-1 --&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-        &lt;div id="contactFormResponse"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;</pre>
-
-					<!-- end of contact section -->
+                    width="100%" height="280" frameborder="0" style="border:0" allowfullscreen>
+                </iframe> -->
+            </div>
+        </div>
 
 
-					<!-- working contact form -->
-
-                    <h2 id="contact-form">Working all forms</h2>
-                    <p>Open the <strong>php folder</strong> and open all <strong>php files</strong>. Change the following mail address with yours. <strong>It's important.</strong></p>
-
-                    <pre class="prettyprint lang-basic">
-$to = 'username@test.com';</pre>
-<br/>
-                    
-
-                    <!-- end of working forms -->
+    </div>
+</section>
 
 
+<!-- Section: sponsors -->
+<section id="contact" class="home-section text-center bg-gray">
 
-					<!-- attributions -->
+    <div class="heading-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-5">
+                <hr class="marginbot-50">
+            </div>
+        </div>
 
-					<h2 id="attribution">Attribution</h2>
-					<p>Following libraries and plugins are used in Conference template:</p>
-					<ul>
-                        <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-                        <li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></li>
-                        <li><a href="https://www.google.com/fonts" target="_blank">Google Fonts</a> </li>
-                        <li><a href="http://ionicons.com/" target="_blank">ionicons</a></li>
-                        <li><a href="https://github.com/gilbitron/Nivo-Lightbox" target="_blank">Nivo Lightbox</a></li>
-                    </ul>
+        <div class="row">
+            <div class="col-lg-12">
 
-					<!-- end of attributions -->
+                <a href="http://www.sfi.ie/" target="_blank"><img height="150" src="https://www.insight-centre.org/sites/all/themes/insight_theme/images/sfi-master-logo.png"style = "margin-right: 20px"></a>
+                <a href="https://www.insight-centre.org/" target="_blank"><img height="110" src="https://www.insight-centre.org/sites/all/themes/insight_theme/images/Insight-LOGO1.png" style = "margin-left: 20px"></a>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <img width="240" src="./assets/images/sponsor/IESIFP.png" style = "margin-right: 20px">
+
+                    <img width="240" src="./assets/images/sponsor/ERDF.png" style = "margin-left: 20px">
+                        </div>
+        </div>
+
+
+        <div class="row">
+
+          <table style="width:100%">
+             <tr>
+               <td><a href="https://www.dcu.ie/" target="_blank"><img height="54" src="https://www.insight-centre.org/sites/default/files/dcu_logo.png" width="79"></a></td>
+               <td><a href="http://www.nuigalway.ie/" target="_blank"><img height="51" src="https://www.insight-centre.org/sites/default/files/nui_galway_logo.png" width="180"></a></td>
+               <td><a href="http://www.ucc.ie/en/" target="_blank"><img height="46" src="https://www.insight-centre.org/sites/default/files/ucc_logo.png" width="94"></a></td>
+               <td><a href="https://www.ucd.ie/" target="_blank"><img height="54" src="https://www.insight-centre.org/sites/default/files/ucd_logo.png" width="37"></a></td>
+             </tr>
+           </table>
+        </div>
 
 
 
 
+    </div>
+</section>
 
-					<!-- changelog -->
 
-					<h2 id="changelog">Changelog</h2>
 
-					<p> Version 1.0</p>
-					<pre class="prettyprint">- Initial Release</pre>
-                    <p> Version 2.0</p>
-                    <pre class="prettyprint">
-- Second Release
-- Bugs fixed
-- Countdown clock added
-- Event Schedule redesigned
-- Important Dates section added
-- Submission form added
-- Registration form added</pre>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="site-info">Updated by <a href="https://sinaahmadi.github.io/" target="_blank">Sina Ahmadi</a><br> Template by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </p>
+                <ul class="social-block">
+                    <li><a href="https://twitter.com/insight_centre"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/insight/"><i class="ion-social-facebook"></i></a></li>
+                    <!-- <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li> -->
+                    <!-- <li><a href=""><i class="ion-social-googleplus"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
-					<!-- end of changelog -->
-						
-				</section>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Javascript files -->
-	<!-- jQuery -->
-	<script src="assets/js/jquery-1.11.0.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!--HL -->
-	<script src="assets/js/prettify/prettify.js"></script>
-	<!-- Custom scripts -->
-	<script src="assets/js/custom.js"></script>
-
+<!-- script -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/countdown/jquery.plugin.min.js"></script>
+<script src="bower_components/countdown/jquery.countdown.min.js"></script>
+<script src="bower_components/nivo-lightbox/nivo-lightbox.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
