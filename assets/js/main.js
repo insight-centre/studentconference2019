@@ -175,7 +175,7 @@ $(document).ready(function () {
 // Countdown jquery
 
 $(function () {
-    var day = 21,
+    var day = 12,
         month = 2,
         year = 2020;
     var austDay = new Date(year, month - 1, day);
